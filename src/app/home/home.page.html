@@ -10,12 +10,17 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>
-      Start with Ionic
-      <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
-    </p>
+  <div class="ion-padding">
+    <ion-input
+      label="Testing blur focus"
+      label-placement="floating"
+      fill="outline"
+      type="tel"
+      autocomplete="off"
+      placeholder=""
+      mode="md"
+      (ionFocus)="focusEventTriggered('Ionic')"
+      (ionBlur)="blurEventTriggered('Ionic')"
+    ></ion-input>
   </div>
 </ion-content>
